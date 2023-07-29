@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.rectangle {
+  width: 538px;
+  height: 324px;
+  border-radius: 20px;
+  background-color: #3498db;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+
+
+
+  
+  
+  
+  
+  
