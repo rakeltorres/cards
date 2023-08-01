@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inglês-cards</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function rotate3D() {
-          const rectangle = document.querySelector('.rectangle');
-          rectangle.classList.toggle('rotate');
-        }
-      </script>
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+      <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <a class="cabecalho__menu__link" href="cards.html">Cards</a>
+    </nav>
+    </header>
     <main>
-        <div class="rectangle texto" onclick="rotate3D()">Orange</div>
+      <div class="card">
+        <img class="card__seta" src="./assests/keyboard_double_arrow_left_FILL0_wght400_GRAD0_opsz48.svg" alt="próximo">
+        <p class="rectangle texto" onclick="rotate3D()">Orange</p>
+
+        <script>
+          function rotate3D() {
+            const rectangle = document.querySelector('.rectangle');
+            rectangle.classList.toggle('rotate');
+          }
+        </script>
+        <img class="card__seta" src="./assests/keyboard_double_arrow_right_FILL0_wght400_GRAD0_opsz48.svg" alt="próximo">
+      </div>
+      <div class="dicas">
+        <p class="dicas__caixa">Dica 1</p>
+        <p class="dicas__caixa">Dica 2</p>
+        <p class="dicas__caixa">Dica 3</p>
+    </div>
     </main>
     <footer></footer>
 </body>
