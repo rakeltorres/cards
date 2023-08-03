@@ -1,7 +1,7 @@
 :root{
-  --cor-texto: #EFE1D1;
-  --cor-objetos: #A78295;
-  --cor-background: #331D2C;
+  --cor-texto: #FFFFFF;
+  --cor-objetos: #5C373D;
+  --cor-background: #0F090A;
 
 }
 
@@ -17,7 +17,7 @@ body{
 }
 
 .cabecalho{
-  padding: 7% 0 0 9%;
+  padding: 5% 0 0 9%;
 
 }
 
@@ -35,7 +35,7 @@ body{
   display: flex;
   justify-content: space-between;
   gap: 100px;
-  margin: 50px;
+  padding: 10% 10% 5% 10%;
 }
 
 .card__seta{
@@ -51,7 +51,9 @@ body{
   transform-style: preserve-3d;
   transition: transform 1s;
   color: var(--cor-texto);
-  
+  text-align: center;
+  padding-top: 120px;
+  font-size: 70px;
 }
 
 .rotate {
@@ -67,4 +69,32 @@ body{
 
 .dicas__caixa{
   border: 2px solid var(--cor-objetos);
+  background-color: var(--cor-objetos);
+  padding: 0.4% 1.5%;
+  border-radius: 5px;
+}
+
+.categorias{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+}
+
+.categorias__cards{
+  background-color: var(--cor-objetos);
+  border: 2px solid var(--cor-objetos);
+  border-radius: 5px;
+  padding: 50px;
+  margin: 1rem;
+  text-align: center;
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.frutas:hover{
+  background-image: url(./assests/Fruta.png);
+}
+
+.animais:hover{
+  background-image: url(./assests/Animais.png);
 }
